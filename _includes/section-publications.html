@@ -1,0 +1,108 @@
+{% assign content = site.data.content['publications'] %}
+
+<!-- About -->
+<div class="content publications">
+
+	{{ if content.title != '' }}
+	<!-- title -->
+	<div class="title">List of Publications</div>
+	{{ endif }}
+
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List of Publications</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: $default-font;
+      margin: 20px;
+    }
+    h1 {
+      text-align: left;
+    }
+
+    /* Styles for the combined list */
+    .combined-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .list-item {
+	  margin-top: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      font-size: 12px;
+    }
+    .title {
+      font-weight: normal;
+      font-size: 14px;
+    }
+    .link_pub {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <ol class="combined-list">
+    <li class="list-item">
+      <span class="title">M. Geisslinger, F. Poszler, and M. Lienkamp, “An Ethical Trajectory Planning Algorithm for Autonomous Vehicles,” Nat. Mach. Intell., vol. 5, pp. 137–144, Feb. 2023.</span><br>
+      <span class="link_pub"> <a href="https://www.nature.com/articles/s42256-022-00607-z">Paper</a> | <a href="https://github.com/TUMFTM/EthicalTrajectoryPlanning">Code</a> </span>
+    </li>
+  <li class="list-item">
+		<span class="title">M. Geisslinger, F. Poszler, J. Betz, C. Lütge, and M. Lienkamp, “Autonomous Driving Ethics: from Trolley Problem to Ethics of Risk,” Philos. Technol., Apr. 2021.</span><br>
+		<span class="link_pub"> <a href="https://link.springer.com/article/10.1007/s13347-021-00449-4">Paper</a></span>
+	</li>
+  <li class="list-item">
+    <span class="title">F. Nobis, M. Geisslinger, M. Weber, J. Betz, and M. Lienkamp, “A Deep Learning-based Radar and Camera Sensor Fusion Architecture for Object Detection,” in 2019 Sensor Data Fusion: Trends, Solutions, Applications (SDF), 2019, pp. 1–7.</span><br>
+    <span class="link_pub"> <a href="https://ieeexplore.ieee.org/abstract/document/8916629">Paper</a> | <a href="https://github.com/TUMFTM/CameraRadarFusionNet">Code</a> </span>
+  </li>
+  <li class="list-item">
+    <span class="title">M. Geisslinger, R. Trauth, G. Kaljavesi, and M. Lienkamp, “Maximum Acceptable Risk as Criterion for Decision-Making in Autonomous Vehicle Trajectory Planning,” IEEE Open J. Intell. Transp. Syst., vol. 4, pp. 570–579, 2023.</span><br>
+    <span class="link_pub"> <a href="https://ieeexplore.ieee.org/abstract/document/10195149">Paper</a> | <a href="https://github.com/TUMFTM/EthicalTrajectoryPlanning">Code</a> </span>
+  </li>
+  <li class="list-item">
+    <span class="title">M. Geisslinger, P. Karle, J. Betz, and M. Lienkamp, “Watch-and-Learn-Net: Self-supervised Online Learning for Probabilistic Vehicle Trajectory Prediction,” in 2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2021, pp. 869–875.</span><br>
+    <span class="link_pub"> <a href="https://ieeexplore.ieee.org/abstract/document/9659079">Paper</a> | <a href="https://github.com/TUMFTM/Wale-Net">Code</a> </span>
+  </li>
+  <li class="list-item">
+    <span class="title">P. Karle, M. Geisslinger, J. Betz, and M. Lienkamp, “Scenario Understanding and Motion Prediction for Autonomous Vehicles - Review and Comparison,” IEEE Trans. Intell. Transp. Syst., vol. 23, no. 10, pp. 16962–16982, 2022.</span><br>
+    <span class="link_pub"> <a href="https://ieeexplore.ieee.org/abstract/document/9733973">Paper</a></span>
+  </li>
+  <li class="list-item">
+    <span class="title">P. Karle, F. Török, M. Geisslinger, and M. Lienkamp, “MixNet: Structured Deep Neural Motion Prediction for Autonomous Racing,” vol. 11, no. August, 2022.</span><br>
+    <span class="link_pub"> <a href="https://ieeexplore.ieee.org/abstract/document/10214014">Paper</a> | <a href="https://github.com/TUMFTM/MixNet">Code</a> </span>
+  </li>
+  <li class="list-item">
+    <span class="title">J. Betz et al., “TUM Autonomous Motorsport: An Autonomous Racing Software for the Indy Autonomous Challenge,” J. F. Robot., Jan. 2023</span><br>
+    <span class="link_pub"> <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rob.22153">Paper</a></span>
+  </li>
+  <li class="list-item">
+    <span class="title">Wischnewski et al., “Indy Autonomous Challenge - Autonomous Race Cars at the Handling Limits,” in 12th International Munich Chassis Symposium 2021, Springer Berlin Heidelberg, 2022, pp. 1–16.</span><br>
+    <span class="link_pub"> <a href="https://link.springer.com/chapter/10.1007/978-3-662-64550-5_10">Paper</a></span>
+  </li>
+  <li class="list-item">
+    <span class="title">F. Poszler, M. Geisslinger, and C. Lütge, “A five-step ethical decision-making model for self-driving vehicles: Which (ethical) theories could guide the process and what values need further investigation?,” in International Conference on Computer Ethics, 2023, no. 1, pp. 1–3.</span><br>
+    <span class="link_pub"> <a href="https://www.sciencedirect.com/science/article/pii/S0160791X23001550">Paper</a></span>
+  </li>
+  <li class="list-item">
+    <span class="title">R. Trauth, M. Kaufeld, M. Geisslinger, and J. Betz, “Learning and Adapting Behavior of Autonomous Vehicles through Inverse Reinforcement Learning,” in 2023 IEEE Intelligent Vehicles Symposium (IV), 2023, pp. 1–8.</span><br>
+    <span class="link_pub"> <a href="https://ieeexplore.ieee.org/abstract/document/10186668">Paper</a> </span>
+  </li>
+  <li class="list-item">
+    <span class="title">F. Poszler and M. Geißlinger, “AI and Autonomous Driving : Key ethical considerations,” no. February, 2021.</span><br>
+    <span class="link_pub"> <a href="https://ieai.mcts.tum.de/wp-content/uploads/2021/02/ResearchBrief_February2021_AutonomousVehicles_FINAL.pdf">Paper</a> </span>
+  </li>
+  <li class="list-item">
+    <span class="title">Heilmeier, M. Geisslinger, and J. Betz, “A Quasi-Steady-State Lap Time Simulation for Electrified Race Cars,” in 2019 14th International Conference on Ecological Vehicles and Renewable Energies, EVER 2019, 2019, pp. 1–10.</span><br>
+    <span class="link_pub"> <a href="https://ieeexplore.ieee.org/abstract/document/8813646">Paper</a> | <a href="https://github.com/TUMFTM/laptime-simulation">Code</a> </span>
+  </li>
+
+    <!-- Add other combined items similarly -->
+  </ol>
+</body>
+</html>

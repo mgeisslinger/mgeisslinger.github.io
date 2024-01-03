@@ -1,0 +1,35 @@
+# Vcard configuration file
+##
+### param "bgimage" - Background Image or Background Photo
+### param "photo" - Small circle photo
+### param "name" - Your Name
+### param "typed" - Typed text under Name
+### param "social" - Social Links, icon class name you can find here https://fontawesome.com/icons?d=gallery&s=brands&m=free
+### param "buttons" - Buttons, icon class you can find here https://ionicons.com/v4/
+
+main:
+  bgimage: "assets/img/profile.jpg"
+  photo: ""
+  name: "Maximilian Geisslinger"
+  typed:
+    - text: "Research Scientist"
+    - text: "Software Developer"
+    - text: "Technology and Philosophy"
+    - text: "AI and Robotics"
+  social:
+    - title: "Linkedin"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/maximilian-geisslinger/"
+    - title: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/mgeisslinger"
+    - title: "Scholar"
+      icon: "fab fa-google"
+      url: "https://scholar.google.com/citations?user=-EKnFC4AAAAJ&hl=de"
+    - title: "ResearchGate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Maximilian-Geisslinger"
+  buttons:
+    - title: "Contact Me"
+      icon: ""
+      url: "mailto:maximilian.geisslinger@outlook.com"
